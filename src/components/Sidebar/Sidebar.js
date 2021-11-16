@@ -21,7 +21,26 @@ const Sidebar = () => {
              className="sidebar__compose"
             startIcon={<AddIcon fontSize="large"/>}>Compose
             </Button>
-            <SidebarOption Icon={InboxIcon} title="inbox" number={54}/>
+            <SidebarOption Icon={InboxIcon} title="inbox" number={54} selected={true}/>
+            <SidebarOption Icon={StarIcon} title="Starred" number={54} />
+            <SidebarOption Icon={AccessTimeIcon} title="Snoozed" number={54} />
+            <SidebarOption Icon={LabelImportantIcon} title="Important" number={54} />
+            <SidebarOption Icon={NearMeIcon} title="Sent" number={54} />
+            <SidebarOption Icon={NoteIcon} title="Drafts" number={54} />
+            <SidebarOption Icon={ExpandMoreIcon} title="More" number={54} />
+            <div className="sidebar__footer">
+            <div className="sidebar__footerIcons">
+            <IconButton>
+            <PersonIcon />
+          </IconButton>
+          <IconButton>
+            <DuoIcon />
+          </IconButton>
+          <IconButton>
+            <PhoneIcon />
+          </IconButton>
+            </div>
+            </div>
         </div>
     )
 }
