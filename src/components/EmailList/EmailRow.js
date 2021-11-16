@@ -11,7 +11,7 @@ function EmailRow({ id, title, subject, description, time }) {
   
 
   return (
-    <div  className="emailRow">
+    <div onClick={} className="emailRow">
       <div className="emailRow__options">
         <Checkbox />
         <IconButton>
